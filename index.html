@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <title>Css Card</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+<div class="card">
+    <div class="content">
+        <h2 class="content-title">
+            Get <span id="insight-color">insights</span> that help your business grow.
+        </h2>
+        <p class="body2 content-body">
+            Discover the benefits of data analytics and make better decisions regarding revenue, customer experience and overall efficiency
+        </p>
+        <div class="container row stat-container">
+            <div class="container column">
+                <h4 class="stat-header">10k+</h4>
+                <span class="body capitalised">Companies</span>
+            </div>
+            <div class="container column">
+                <h4 class="stat-header">314</h4>
+                <span class="body capitalised">Templates</span>
+            </div>
+            <div class="container column">
+                <h4 class="stat-header">12M+</h4>
+                <span class="body capitalised">Queries</span>
+            </div>
+        </div>
+    </div>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="image-content">
+        <img src="img/image-header-desktop.jpg">
+        <div class="overlay"></div>
+    </div>
+</div>
 </body>
 </html>
